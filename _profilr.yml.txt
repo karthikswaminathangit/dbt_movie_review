@@ -1,0 +1,13 @@
+dbt_movie_review:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: ri89985.east-us-2.azure
+      user: karthik92
+      password: Snowflake123
+      database: MOVIE_DB_DEV
+      warehouse: WH_DEV
+      schema: RATINGS_SCHEMA
+      role: SYSADMIN
+      threads: 10
