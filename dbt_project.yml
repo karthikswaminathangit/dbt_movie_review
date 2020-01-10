@@ -36,3 +36,5 @@ models:
           materialized: table
       stg_views:
           materialized: view
+      Views:
+          materialized: view
